@@ -35,16 +35,16 @@ struct ContentView: View {
     
     var emailUser: some View {
         TextField("Digite seu email:", text: $email)
-            .frame(height: 50)
+            .frame(height: Constants.heightDefault)
             .padding(.horizontal)
-            .background(Color.gray.opacity(0.15).cornerRadius(20))
+            .background(DSMColor.backgroundTextField.color)
     }
     
     var passwordUser: some View {
         TextField("Digite sua senha", text: $password)
-            .frame(height: 50)
+            .frame(height: Constants.heightDefault)
             .padding(.horizontal)
-            .background(Color.gray.opacity(0.15).cornerRadius(20))
+            .background(DSMColor.backgroundTextField.color)
     }
     
     var button: some View {
@@ -54,9 +54,9 @@ struct ContentView: View {
             Text("Logar")
                 .foregroundColor(.white)
                 .font(.title3)
-                .frame(height: 50)
+                .frame(height: Constants.heightDefault)
                 .frame(maxWidth: .infinity)
-                .background(Color.cyan).cornerRadius(20)
+                .background(DSMColor.backgroundButton.color.cornerRadius(10))
         }
     }
     
