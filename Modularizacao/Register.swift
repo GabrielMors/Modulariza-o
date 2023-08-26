@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Register.swift
 //  Modularizacao
 //
 //  Created by Gabriel Mors  on 26/08/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import DSM
 
-struct ContentView: View {
+struct Register: View {
     
     @State var email = ""
     @State var password = ""
@@ -16,11 +16,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Text("Entrar")
+            Text("Registrar")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.title)
             
             emailUser
+            passwordUser
                 .padding(.vertical)
             passwordUser
             
@@ -49,7 +50,7 @@ struct ContentView: View {
         Button {
             
         } label: {
-            Text("Logar")
+            Text("Registrar")
                 .foregroundColor(.white)
                 .font(.title3)
                 .frame(height: Constants.heightDefault)
@@ -57,10 +58,10 @@ struct ContentView: View {
                 .background(DSMColor.backgroundButton.color.cornerRadius(10))
         }
     }
-    
 }
-struct ContentView_Previews: PreviewProvider {
+
+struct Register_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Register()
     }
 }
