@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DSM
 
 struct ContentView: View {
     
@@ -14,6 +15,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            
+            Text(DSM.text)
+            
             Text("Entrar")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.title)

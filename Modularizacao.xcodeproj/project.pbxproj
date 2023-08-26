@@ -11,6 +11,7 @@
 		C46BE9932A9A486C0060BDF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46BE9922A9A486C0060BDF7 /* ContentView.swift */; };
 		C46BE9952A9A486E0060BDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46BE9942A9A486E0060BDF7 /* Assets.xcassets */; };
 		C46BE9982A9A486E0060BDF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46BE9972A9A486E0060BDF7 /* Preview Assets.xcassets */; };
+		C46BE9A22A9A64710060BDF7 /* DSM in Frameworks */ = {isa = PBXBuildFile; productRef = C46BE9A12A9A64710060BDF7 /* DSM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C46BE9922A9A486C0060BDF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C46BE9942A9A486E0060BDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46BE9972A9A486E0060BDF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C46BE99F2A9A629D0060BDF7 /* DSM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DSM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46BE9A22A9A64710060BDF7 /* DSM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		C46BE9842A9A486C0060BDF7 = {
 			isa = PBXGroup;
 			children = (
+				C46BE99E2A9A629D0060BDF7 /* Packages */,
 				C46BE98F2A9A486C0060BDF7 /* Modularizacao */,
 				C46BE98E2A9A486C0060BDF7 /* Products */,
+				C46BE9A02A9A64710060BDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C46BE99E2A9A629D0060BDF7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C46BE99F2A9A629D0060BDF7 /* DSM */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C46BE9A02A9A64710060BDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = Modularizacao;
+			packageProductDependencies = (
+				C46BE9A12A9A64710060BDF7 /* DSM */,
+			);
 			productName = Modularizacao;
 			productReference = C46BE98D2A9A486C0060BDF7 /* Modularizacao.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +360,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C46BE9A12A9A64710060BDF7 /* DSM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C46BE9852A9A486C0060BDF7 /* Project object */;
 }
